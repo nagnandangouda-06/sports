@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Indian League Sports Hub</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .title-box {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .nav-bar {
+            text-align: center;
+            background-color: #0f172a;
+            padding: 10px;
+        }
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px 8px;
+        }
+        .nav-bar a:hover {
+            background-color: white;
+            color: #0f172a;
+            border-radius: 3px;
+        }
+        .active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .container {
+            background-color: white;
+            margin: 20px auto;
+            padding: 15px;
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #1e3a8a;
+        }
+
+        /* Login Form Styling */
+        .login-box {
+            width: 60%;
+            margin: auto;
+            padding: 15px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            background-color: #f7faff;
+        }
+        label {
+            display: block;
+            margin-top: 8px;
+            font-size: 14px;
+        }
+        input, select {
+            width: 95%;
+            padding: 6px;
+            margin-top: 4px;
+        }
+        .btn {
+            margin-top: 10px;
+            padding: 7px 12px;
+            background-color: #1e3a8a;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0f172a;
+        }
+        .footer {
+            text-align: center;
+            background-color: #0f172a;
+            color: white;
+            padding: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Title -->
+    <div class="title-box">
+        <h1>Indian League Sports Hub</h1>
+        <p>Login</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="cricket.html">Cricket Leagues</a>
+        <a href="football.html">Football Leagues</a>
+        <a href="kabaddi.html">Kabaddi Leagues</a>
+        <a href="other-leagues.html">Other Leagues</a>
+        <a href="fixtures.html">Fixtures</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="login.html" class="active">Login</a>
+    </nav>
+
+    <div class="container">
+        <h2>Member Login</h2>
+
+        <div class="login-box">
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+
+                <label for="fav">Favourite Sport League:</label>
+                <select id="fav">
+                    <option value="IPL">IPL (Cricket)</option>
+                    <option value="ISL">ISL (Football)</option>
+                    <option value="PKL">PKL (Kabaddi)</option>
+                    <option value="Other">Other Leagues</option>
+                </select>
+
+                <button class="btn">Login</button>
+            </form>
+
+            <p style="margin-top:10px; font-size:13px;">
+                Don't have an account? <b>Register (coming soon)</b>
+            </p>
+        </div>
+
+        <p><small>Note: This login form is only for design purpose and not functional.</small></p>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Indian League Sports Hub</p>
+        <p>Student Project using HTML & CSS</p>
+    </footer>
+
+</body>
+</html>
